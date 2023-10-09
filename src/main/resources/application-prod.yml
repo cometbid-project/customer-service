@@ -1,0 +1,11 @@
+server:
+  port: ${PORT}
+  netty:
+    connection-timeout: 2s
+    idle-timeout: 15s
+  shutdown: graceful
+
+spring:
+  data:
+    mongodb:
+      uri: ${MONGO_URI}
